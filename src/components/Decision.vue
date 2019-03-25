@@ -86,13 +86,9 @@
 
       </div>
       <div class="vote-results" v-if="hasVoted">
-        <!-- My vote histogram -->
         <div style="font-size:1.3rem; margin-left:1.1rem;" v-for="(option, idx) in options" v-bind:key="idx">
           <p>{{ option.typedOption }}: {{ option.votecount }} </p>
         </div>
-
-        <!-- <Histogram :items="options"> </Histogram> -->
-
       </div>
 
     </div>
@@ -101,7 +97,6 @@
 
 
 <script>
-  import Histogram from "./Histogram.vue";
   import * as firebase from 'firebase';
 
   import {
@@ -111,7 +106,6 @@
   export default {
     name: 'Decision',
     components: {
-      Histogram
     },
     data() {
       return {
