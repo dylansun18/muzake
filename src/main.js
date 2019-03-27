@@ -9,18 +9,17 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 Vue.use(VueFire)
 
-firebase.initializeApp({
-  projectId: 'muzake-sbhacks',
-  databaseURL: 'https://muzake-sbhacks.firebaseio.com'
-})
+var config = {
+    apiKey: "AIzaSyCT2rWWAGMjRMi_EElbwykHEuIqj2QTW9U",
+    authDomain: "muzake-fa5a6.firebaseapp.com",
+    databaseURL: "https://muzake-fa5a6.firebaseio.com",
+    projectId: "muzake-fa5a6",
+    storageBucket: "muzake-fa5a6.appspot.com",
+    messagingSenderId: "192490519185"
+  };
+firebase.initializeApp(config);
 
 export const db = firebase.firestore()
-
-import GoogleAuth from 'vue-google-auth'
-
-Vue.use(GoogleAuth, { clientID: '10448693707-nh9hplfcnv3bjbvb9i4g0ed0gho423pr.apps.googleusercontent.com' })
-Vue.googleAuth().load()
-
 
 
 Vue.config.productionTip = false

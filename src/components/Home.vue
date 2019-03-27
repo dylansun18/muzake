@@ -28,8 +28,6 @@
                   {{decision.title}}?
                 </router-link>
               </li>
-              <router-link to="/What javascript framework should we use for our project?!"> <li class="listitem">What javascript framework should we use for our project?!</li> </router-link>
-              <router-link to="/what css framework should we use for our project?"><li class="listitem">What css framework should we use for our project?!</li></router-link>
             </ul>
           </div>
         </div>
@@ -56,14 +54,12 @@
             </div>
           </div>
           <div class="searcht">
-            <div class="nick">Log in</div>
+            <router-link to="Login"> <div class="nick">Log in</div> </router-link>
             <div class="nick">Register</div>
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 
 </template>
@@ -126,7 +122,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .bod {
   font-family: sans-serif;
@@ -318,8 +313,14 @@ export default {
   background-color:#cbcbcb;
 }
 
+router-link{
+  text-decoration: none;
+  color:#D7BF83;
+}
+
 a{
   text-decoration: none;
+  color:#D7BF83;
 }
 
 a:visited{

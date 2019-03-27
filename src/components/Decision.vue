@@ -1,5 +1,4 @@
 <template>
-
   <div class="bod">
     <div class="main">
       <div class="headerbar">

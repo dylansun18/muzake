@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Decision from '../components/Decision'
 import Home from '../components/Home'
+import Login from '../components/Login'
 // import Login from '../components/Login'
 // import Dashboard from '../components/Dashboard'
 
@@ -15,10 +16,16 @@ export default new Router({
       component: Home
     },
     {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
       path: '/:title',
       name: 'Decision',
       component: Decision
     },
+
     // {
     //   path: '/login',
     //   name: 'Login',
